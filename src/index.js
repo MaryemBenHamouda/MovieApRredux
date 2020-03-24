@@ -5,10 +5,15 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { Provider } from "react-redux";
 import Store from "./store";
+import { BrowserRouter, Route } from "react-router-dom";
+import Description from "./components/Description";
 
 ReactDOM.render(
   <Provider store={Store}>
-    <App />
+    <BrowserRouter>
+      <Route exact path="/" component={App} />
+      <Route path="/movie/:id" component={Description} />
+    </BrowserRouter>
   </Provider>,
   document.getElementById("root")
 );

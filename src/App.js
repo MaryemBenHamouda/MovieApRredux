@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import MovieList from "./components/MovieList";
 import Search from "./components/Search";
 import AddModale from "./components/AddModale";
+import { Route, BrowserRouter } from "react-router-dom";
 
 function App() {
   return (

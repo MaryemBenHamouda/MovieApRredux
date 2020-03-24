@@ -14,8 +14,9 @@ const MovieItem = ({ movie, deleteMovie }) => {
         <Card.Title>{movie.title}</Card.Title>
         <Card.Text>{movie.year}</Card.Text>
         <StarRatingComponent name="rate1" starCount={5} value={movie.rating} />
-
-        <Button variant="light">Movie Description</Button>
+        <Link to={`/movie/${movie.id}`}>
+          <Button variant="light">Movie Description</Button>
+        </Link>
 
         <Button variant="danger" onClick={() => deleteMovie(movie.id)}>
           Delete
@@ -31,4 +32,3 @@ const mapDispatchToProps = dispatch => {
   };
 };
 export default connect(null, mapDispatchToProps)(MovieItem);
-// editMovie: movie => dispatch(EditMovie(movie)),
