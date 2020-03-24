@@ -1,0 +1,55 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.container {
+  border: 1px solid black;
+  margin-top: 20px;
+  padding: 20px;
+}
+.form {
+  width: 100% !important;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  margin: 20px;
+  width: 80%;
+}
+.input {
+  display: flex;
+  justify-content: space-around;
+  width: 70% !important;
+}
+.form-inline {
+  width: 100% !important;
+  align-items: center !important;
+  margin-left: 5px;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+.addition {
+  border: 1px solid rgb(104, 3, 3);
+  width: 150px;
+  height: 150px;
+}
+.btn {
+  display: flex;
+
+  align-items: center;
+}
+.card {
+  margin: 5px;
+  border-radius: 5px solid black;
+}
+.imge :hover {
+  filter: drop-shadow(0 0 0.75rem crimson);
+}
